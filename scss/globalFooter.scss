@@ -1,0 +1,168 @@
+
+
+.footer{
+  display: none;
+  // display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+
+.footer-left{
+  position: absolute;
+  top:3vw;
+  left:3vw;
+  font-size: 1vw;
+  p{
+    font-size: 1vw;
+
+  }
+  h2{
+    font-size: 2vw;
+  }
+
+}
+
+.footer-center{
+  color:gray;
+  font-size: 1.5vw;
+  width:60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  >ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    >li{
+      >ul{
+        >li{
+          &:first-child{
+            font-weight: bold;
+            padding-bottom: 1vw;
+          }
+        }
+
+      }
+
+    }
+  }
+  li{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+  }
+
+}
+
+.footer-right{
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    margin-right: 1.5vw;
+    width: 1vw;
+
+  }
+}
+
+.mobile-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+     padding-top: 13vw;
+    // padding-bottom: 6vw;
+}
+
+.mf-copyright{
+  position: absolute;
+  top:2vw;
+  left:2vw;
+}
+
+.footer-dp-button{
+  color:black !important;
+}
+
+.footer-dp-item{
+  color:black !important;
+}
+
+.footer-dp-li{
+  padding: 1vw;
+  margin: 1vw;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.footer-dp-item{
+  font-size: 3vw;
+}
+
+.footer-social{
+  margin: auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  img{
+    padding: 2vw;
+  }
+}
+
+.footer-actions{
+background-color: black;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+img{
+  margin:3vw;
+  color:white;
+  width:6vw;
+  height: 6vw;
+
+  &:hover{
+    transform: scale(1.2);
+
+  }
+}
+}
+
+.footer-images-numbers{
+
+  border-radius: 50%;
+  border: 2px solid greenyellow;
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  top:-2vw;
+  right:10%;
+  background-color: rgba(0, 0, 0,0);
+
+}
+
+
+@media (min-width: 768px){
+
+  .footer{
+
+     display: flex;
+  }
+.mobile-footer{
+display: none;
+}
+}

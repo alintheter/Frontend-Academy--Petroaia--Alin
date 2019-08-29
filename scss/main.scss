@@ -1,0 +1,24 @@
+.hide{
+  display: none !important;
+}
+// bring in Bootstrap
+@import 'vendor/bootstrap';
+
+//header scss
+@import 'globalHeader';
+
+//homepage scss
+@import 'homepage';
+
+//footer scss
+@import 'globalFooter';
+
+//404page scss
+@import '404page';
+
+///categoryLanding
+@import 'categoryLanding';
+
+//productdetail
+@import 'productdetail';
+//

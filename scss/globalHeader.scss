@@ -1,0 +1,960 @@
+//NAVBAR GLOBAL
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+//MOBILE FIRST
+.header-images-numbers{
+  font-size: 1vw;
+}
+//NAV POSITION
+#navbar-exit{
+  position:absolute;
+  top:0.5em;
+  left:1em;
+  padding-top: 6px !important;
+
+  &:focus{
+    outline: none;
+    transform: scale(1.1);
+  }
+
+}
+#navbar-osf{
+  background-color:white !important;
+  padding-left: 0;
+  padding-right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar-mobile-logo{
+  margin-bottom: 2px;
+
+}
+
+.navbar-ul-osf{
+  background-color: #262a32;
+  color:white;
+
+  li{
+    margin-left: 1em;
+
+    &:last-child{
+      margin:auto;
+      margin-bottom: 2em;
+      margin-top:15em;
+      img{
+      border-radius: 10%;
+
+}
+    }
+  }
+}
+// NAVBAR COLORS
+.nav-link{
+  color:white !important;
+
+  &:active{
+    color:gray;
+  }
+
+  &:hover{
+    color:gray;
+  }
+}
+.navbar{
+  padding-bottom: 0 !important;
+}
+//DROPDOWN COLORS
+.dropdown-menu{
+  padding:0;
+  margin:0;
+  color:white;
+  background-color: inherit;
+  border: 0;
+}
+.dropdown-item{
+  color:white;
+
+  &:hover{
+    background-color: #262a32;
+    color:gray;
+  }
+}
+.dropdown-menu-listing{
+  a{
+    color:white !important;
+    &:hover{
+      text-decoration: underline;
+
+    }
+  }
+}
+//dropdown lvl 2
+.dropdown-submenu {
+  position: relative;
+
+  &:hover{
+    background-color: #262a32 !important;
+    color:gray;
+  }
+  &:active{
+    background-color: #262a32 !important;
+    color: gray;
+  }
+}
+
+.dropdown-submenu>a:after {
+  content: "\f0da";
+  float: right;
+  border: none;
+  font-family: 'FontAwesome';
+}
+.dropdown-submenu-item{
+  padding-left: 2em;
+}
+
+.dropdown-content{
+  display:none;
+}
+.dropdown-content-menu{
+
+  li:hover{
+    border:none !important;
+
+  }
+
+}
+
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// TABLE OF CONTENTS
+//DISPLAY PROPRETIES
+//HOVER ITEMS
+// POSITIONING
+// HEADER DROPDOWN
+// HEADER RIGHT PART
+
+// scss is from left to right
+
+////MEDIA QUERYYYY 1280
+.media1280{
+  display:none;
+}
+
+@media (min-width: 1280px) {
+
+  //DISPLAY PROPRETIES
+.media1280{
+  display: block;
+}
+#navbar-mobile-logo{
+  display:none;
+}
+#navbar-exit{
+  display:none;
+}
+#navbar-osf{
+  padding: 0;
+  padding-top: 1em;
+  box-shadow: 0px 3px black;
+  background-color: #fff !important;
+  position: fixed;
+}
+.navbar-ul-osf{
+
+  li{
+    display:none;
+  }
+}
+//HOVER ITEMS
+.nav-item{
+  background-color: white;
+  color: black;
+
+  &:hover{
+    background-color: gray;
+    border-bottom: solid 2px green;
+  }
+}
+
+.media1280-menu{
+margin-right: calc(50% - 246.15px); //minus half the div size
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+      padding: 1em 2em 1em 2em;
+
+    }
+     li:hover{
+      background-color: #262a32;
+      color:white;
+      border-bottom: solid 3px #84bc22;
+
+        .dropdown-content{
+          display:block;
+        }
+    }
+  }
+}
+
+// POSITIONING
+.dropdown-item{
+  color:black;
+}
+
+.brand-logo{
+  position: absolute;
+  top:1em;
+  left:3em;
+  display: flex;
+  align-items: center;
+
+  div{
+    float:right;
+    text-align: center;
+    margin-left: 1em;
+    line-height: 120%;
+    p{
+      &:first-child{
+        /* Style for "OSF" */
+color: #011847;
+font-family: "Lato - Extra Bold";
+
+font-size: 2em;
+text-transform: uppercase;
+
+
+      }
+      &:last-child{
+        /* Style for "Academy" */
+
+color: #84bc22;
+font-family: Lato;
+
+text-transform: capitalize;
+      }
+
+    }
+  }
+  p{
+    display:block;
+    margin:0;
+
+  }
+}
+// HEADER DROPDOWN
+.dropdown-content{
+position:fixed;
+top:90px;
+padding-top:1em;
+padding-bottom: 1em;
+width:100%;
+left:0;
+right:0;
+background-color: #262a32;
+
+}
+.dropdown-content-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  li:hover{
+    border:none !important;
+
+  }
+
+}
+.dropdown-menu-listing{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  a{
+    color:white !important;
+    &:hover{
+      text-decoration: underline;
+
+    }
+  }
+  >li{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  li:first-child{
+    margin-bottom: 1em;
+  }
+}
+// HEADER RIGHT PART
+.media1280-right{
+
+    position: fixed;
+    right:2em;
+    top:2em;
+    display: flex;
+    justify-content: flex-start;
+    span{
+      display: flex;
+      margin-left: 1em;
+      span{
+        a{
+          color:gray !important;
+          &:hover{
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+        }
+      }
+      a{
+        margin-left: 1em;
+      }
+    }
+
+}
+
+.header-images{
+a{
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+}
+
+.dropdown-item2{
+  background-color: white;
+  color:gray;
+  text-decoration: none;
+  display: block;
+  width: 50px;
+
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+
+  &:last-child{
+    border-bottom: solid 1px black;
+  }
+
+  &:first-child{
+    // box-shadow: 0px -1px black ;
+    // box-shadow: 0px -2px black 0.7 ;
+    // box-shadow: 0px -3px black 0.4;
+    // box-shadow: 0px -4px black 0.1;
+    -webkit-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+  }
+
+  &:hover{
+
+    transform: scale(1.1);
+  }
+}
+
+.header-images-numbers{
+  padding: 0;
+  margin:0 !important;
+  width:20px;
+  height: 20px;
+  position: absolute;
+  top:-10px;
+  right:-12px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px green;
+
+}
+}
+// // ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+// MEDIA QUERY FOR 768PX - 1024 PX
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+// .media1280{
+//   display:none;
+// }
+
+@media (max-width:1024px) and (min-width:768px) {
+
+  //DISPLAY PROPRETIES
+.media1280{
+  display: block;
+}
+#navbar-mobile-logo{
+  display:none;
+}
+#navbar-exit{
+  display:none;
+}
+#navbar-osf{
+  padding: 0;
+  padding-top: 1em;
+  box-shadow: 0px 3px black;
+  background-color: #fff !important;
+  position: fixed;
+}
+.navbar-ul-osf{
+
+  li{
+    display:none;
+  }
+}
+//HOVER ITEMS
+.nav-item{
+  background-color: white;
+  color: black;
+
+  &:hover{
+    background-color: gray;
+    border-bottom: solid 2px green;
+  }
+}
+
+.media1280-menu{
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+margin-right: 250px; //minus half the div size
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    li{
+      padding: 0.3em 0.6em ;
+
+    }
+    // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     li:hover{
+      background-color: #262a32;
+      color:white;
+      border-bottom: solid 3px #84bc22;
+
+        .dropdown-content{
+          display:block;
+        }
+    }
+  }
+}
+
+// POSITIONING
+.dropdown-item{
+  color:black;
+}
+// -----------CHANGED CHANGED ---
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-----------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.brand-logo{
+  position: absolute;
+  top:0.5em;
+  left:1em;
+  display: flex;
+  align-items: center;
+  img{
+    width: 40px;
+
+  }
+  div{
+    float:right;
+    text-align: center;
+    margin-left: 0.5em;
+    line-height: 120%;
+    p{
+      &:first-child{
+        /* Style for "OSF" */
+color: #011847;
+font-family: "Lato - Extra Bold";
+
+font-size: 1.5em;
+text-transform: uppercase;
+
+
+      }
+      &:last-child{
+        /* Style for "Academy" */
+
+color: #84bc22;
+font-family: Lato;
+
+text-transform: capitalize;
+      }
+
+    }
+  }
+  p{
+    display:block;
+    margin:0;
+
+  }
+}
+
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// HEADER DROPDOWN
+.dropdown-content{
+position:fixed;
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+top:67px;
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+padding-top:1em;
+padding-bottom: 1em;
+width:100%;
+left:0;
+right:0;
+background-color: #262a32;
+
+}
+.dropdown-content-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  &:last-child{
+    img{
+    display: none;
+}  }
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+}
+.dropdown-menu-listing{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  >li{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  li:first-child{
+    margin-bottom: 1em;
+  }
+}
+// HEADER RIGHT PART
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.media1280-right{
+
+    position: fixed;
+    right:2em;
+    top:1.5em;
+    display: flex;
+    justify-content: flex-start;
+
+
+    span{
+      display: flex;
+      margin-left: 0.2em;
+      span{
+        a{
+          color:gray !important;
+          &:hover{
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+        }
+      }
+      a{
+        margin-left: 1em;
+      }
+    }
+
+}
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+.lang-curr-settings{
+
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    left: -70px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    font-size: 0.9em;
+    line-height: 1.8em;
+
+
+}
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.header-images{
+
+a{
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  img{
+    width:20px;
+
+  }
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+}
+
+.dropdown-item2{
+  background-color: white;
+  color:gray;
+  text-decoration: none;
+  display: block;
+  width: 50px;
+
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+
+  &:last-child{
+    border-bottom: solid 1px black;
+  }
+
+  &:first-child{
+    // box-shadow: 0px -1px black ;
+    // box-shadow: 0px -2px black 0.7 ;
+    // box-shadow: 0px -3px black 0.4;
+    // box-shadow: 0px -4px black 0.1;
+    -webkit-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+  }
+
+  &:hover{
+
+    transform: scale(1.1);
+  }
+}
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.header-images-numbers{
+  padding: 0;
+  margin:0 !important;
+  width:15px;
+  height: 15px;
+  position: absolute;
+  top:-7px;
+  right:-9px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 1px green;
+}
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------CHANGED CHANGED --------------------------------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+}
+
+
+////////
+// // ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+// MEDIA QUERY FOR 1024PX - 1280 PX
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+// .media1280{
+//   display:none;
+// }
+
+@media (max-width:1280px) and (min-width:1025px) {
+
+  //DISPLAY PROPRETIES
+.media1280{
+  display: block;
+}
+#navbar-mobile-logo{
+  display:none;
+}
+#navbar-exit{
+  display:none;
+}
+#navbar-osf{
+  padding: 0;
+  padding-top: 1em;
+  box-shadow: 0px 3px black;
+  background-color: #fff !important;
+  position: fixed;
+}
+.navbar-ul-osf{
+
+  li{
+    display:none;
+  }
+}
+//HOVER ITEMS
+.nav-item{
+  background-color: white;
+  color: black;
+
+  &:hover{
+    background-color: gray;
+    border-bottom: solid 2px green;
+  }
+}
+
+.media1280-menu{
+  //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+margin-right: 40%; //minus half the div size
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+    li{
+      padding: 0.6em 1.2em;
+
+    }
+    //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+    //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+     li:hover{
+      background-color: #262a32;
+      color:white;
+      border-bottom: solid 3px #84bc22;
+
+        .dropdown-content{
+          display:block;
+        }
+    }
+  }
+}
+
+// POSITIONING
+.dropdown-item{
+  color:black;
+}
+
+.brand-logo{
+  //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+  position: absolute;
+  top:1em;
+  left:2em;
+  display: flex;
+  align-items: center;
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+  img{
+    width:50px;
+
+  }
+  div{
+    float:right;
+    text-align: center;
+    margin-left: 0.6em;
+    line-height: 120%;
+    //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+    //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+    p{
+      &:first-child{
+        /* Style for "OSF" */
+color: #011847;
+font-family: "Lato - Extra Bold";
+
+font-size: 2em;
+text-transform: uppercase;
+
+
+      }
+      &:last-child{
+        /* Style for "Academy" */
+
+color: #84bc22;
+font-family: Lato;
+
+text-transform: capitalize;
+      }
+
+    }
+  }
+  p{
+    display:block;
+    margin:0;
+
+  }
+}
+// HEADER DROPDOWN
+.dropdown-content{
+position:fixed;
+top:77px;
+padding-top:1em;
+padding-bottom: 1em;
+width:100%;
+left:0;
+right:0;
+background-color: #262a32;
+
+}
+.dropdown-content-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+  li{
+    padding: 0.4em 1em !important;
+  }
+//-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+}
+.dropdown-menu-listing{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  >li{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  li:first-child{
+    margin-bottom: 1em;
+  }
+}
+// HEADER RIGHT PART
+.media1280-right{
+
+    position: fixed;
+    right:2em;
+    top:2em;
+    display: flex;
+    justify-content: flex-start;
+    span{
+      display: flex;
+      //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+      margin-left: 0.6em;
+      //-----------CHANGED-------------------CHANGED--------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+      span{
+        a{
+          color:gray !important;
+          &:hover{
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+        }
+      }
+      a{
+        margin-left: 1em;
+      }
+    }
+
+}
+
+.header-images{
+a{
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+}
+
+.dropdown-item2{
+  background-color: white;
+  color:gray;
+  text-decoration: none;
+  display: block;
+  width: 50px;
+
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+
+  &:last-child{
+    border-bottom: solid 1px black;
+  }
+
+  &:first-child{
+    // box-shadow: 0px -1px black ;
+    // box-shadow: 0px -2px black 0.7 ;
+    // box-shadow: 0px -3px black 0.4;
+    // box-shadow: 0px -4px black 0.1;
+    -webkit-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+    box-shadow: 0px -5px 11px -1px rgba(0,0,0,0.71);
+  }
+
+  &:hover{
+
+    transform: scale(1.1);
+  }
+}
+
+.header-images-numbers{
+  padding: 0;
+  margin:0 !important;
+  width:20px;
+  height: 20px;
+  position: absolute;
+  top:-10px;
+  right:-12px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px green;
+}
+}
+//
+//
+//
+//
+//
+//END OF HEADER ----------------------------------------------------------------------------------------------------
+//
+//
+//
+//
+//
+//
+//
+//

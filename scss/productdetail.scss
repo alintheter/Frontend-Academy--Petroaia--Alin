@@ -1,0 +1,243 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin pad-top-bot{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+@mixin margin-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.pd-wrapper{
+  background-color: #f1edea;
+  @include flex-column;
+  padding-bottom: 0vw;
+}
+
+.productdetail-title{
+@include flex-column;
+@include pad-top-bot;
+img{
+  width:100%;
+}
+}
+.productdetail-container{
+  @include flex-column;
+  width: 90%;
+  @include margin-center;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pd-part1{
+  @include flex-row;
+  position: relative;
+  margin-bottom: 5vw;
+}
+.bigGirl{
+  width:45%;
+  position: absolute;
+  top: 1.5vw;
+  left: 1.5vw;
+  img{
+    &:first-child{
+      width:100%;
+    }
+    &:last-child{
+      position: absolute;
+      top:2vw;
+      left: 2vw;
+      &:hover{
+        transform: scale(2);
+      }
+    }
+  }
+}
+.little-bigGirls{
+  @include flex-column;
+  @include pad-top-bot;
+  width: 45%;
+  margin-bottom: auto;
+  img{
+    width:100%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    opacity: 0.5;
+
+    &:first-child{
+      border: 1.4px solid green;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    &:hover{
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  >span{
+    padding: 1vw 0vw;
+  }
+}
+.part1-right{
+  @include flex-row;
+  margin-left: 50%;
+}
+.part1-things{
+  @include flex-column;
+  align-items: flex-start;
+  @include pad-top-bot;
+  padding-right: 1vw;
+  padding-left: 2vw;
+  h1{
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  >span{
+    &:first-child{
+      padding-bottom: 2vw;
+    }
+  }
+}
+.pd-right-buttons{
+  @include flex-row;
+  padding-top: 1.2vw;
+  padding-bottom: 1.3vw;
+  button{
+    margin-left: 1vw;
+    // margin-right: 1vw;
+    border-radius: 20px;
+    border: 1.4px solid black;
+  }
+  >span{
+    border-radius: 20px;
+    border: 1.4px solid black;
+  }
+}
+.pd-right-text{
+  font-size: 1.4vw;
+  a{
+    color:green;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.pd-social{
+  color:gray;
+  font-size: 2vw;
+  @include flex-row;
+  >span{
+    margin-left: 2vw;
+    @include flex-row;
+      img{
+        margin-left: 1vw;
+        opacity: 0.7;
+        width: 22%;
+      }
+  }
+  p{margin: 0;}
+}
+
+.pd-part2{
+  @include flex-column;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.active-tab{
+  background-color: black !important;
+  color:white !important;
+  font-weight: bold;
+}
+.pd-part2-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: stretch;
+
+  button{
+    font-size: 2vw;
+    padding: 1vw 1vw;
+
+    // &:first-child{
+    //   background-color: black;
+    //   color: white;
+    //
+    // }
+    &:hover{
+      background-color: gray;
+    }
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    color:black;
+    border-bottom: 0;
+  }
+}
+.part2-text{
+  @include flex-row;
+  @include pad-top-bot;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  p{
+    color: white;
+    max-width: 40%;
+    width: 40%;
+  }
+}
+.pd-Popular-items{
+  @include flex-column;
+    @include pad-top-bot;
+}
+
+.pd-pi-title{
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.fixedOverlay{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img{
+    border:3px greenyellow solid;
+    margin-top: 5vw;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+  }
+}
+
+a{
+  text-decoration: none;
+  color:green;
+}
